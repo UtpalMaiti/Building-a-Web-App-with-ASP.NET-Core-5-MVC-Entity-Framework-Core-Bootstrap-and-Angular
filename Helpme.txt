@@ -1,0 +1,16 @@
+Building a Web App with ASP.NET Core 5, MVC, Entity Framework Core, Bootstrap, and Angular by Shawn Wildermuth
+
+Course Overview
+Getting Started
+HTML5 and CSS Basics
+Getting Started with JavaScript
+Using ASP.NET MVC
+Using Bootstrap to Prototype the App
+Building the Database with Entity Framework Core
+Creating the API with ASP.NET MVC
+ASP.NET Core Identity
+Brief Introduction to TypeScript
+Client-side Development with Angular
+Using Services in Angular
+Routing with Angular
+Deploying ASP.NET Core Apps

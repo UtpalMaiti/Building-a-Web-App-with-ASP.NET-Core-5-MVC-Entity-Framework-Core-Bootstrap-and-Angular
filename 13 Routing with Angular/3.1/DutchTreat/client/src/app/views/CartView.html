@@ -1,0 +1,33 @@
+﻿<h3>Shopping Cart</h3>
+<div>Count:  {{ store.order.items.length }}</div>
+<table class="table table-condensed table-striped">
+  <thead>
+    <tr>
+      <td></td>
+      <td>Product</td>
+      <td>Quantity</td>
+      <td>Price</td>
+      <td>Total</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of store.order.items">
+      <td>
+        <img src="/img/{{ item.productArtId }}.jpg" alt="{{ item.title }}" class="img-fluid product-thumb" />
+      </td>
+      <td>{{ item.productCategory }}</td>
+      <td>{{ item.quantity }}</td>
+      <td>{{ item.unitPrice | currency }}</td>
+      <td>{{ (item.quantity * item.unitPrice) | currency }}</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4" class="text-right">Total</td>
+      <td>{{ store.order.subtotal() | currency }}</td>
+    </tr>
+  </tfoot>
+
+</table>
+
+<a class="btn btn-success" *ngIf="store.order.items.length > 0" routerLink="/checkout">Checkout</a>

@@ -1,0 +1,8 @@
+{
+	"include": [ "wwwroot/ts/**/*.ts" ],
+	"exclude": [ "client/**" ],
+	"compilerOptions": {
+		"target": "ES5",
+		"sourceMap": true
+	}
+}
